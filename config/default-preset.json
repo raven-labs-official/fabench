@@ -1,0 +1,5 @@
+{
+  "schema": "raven.default-preset.v1",
+  "description": "The preset that pnpm exp:forecast-value uses when --preset is not given.",
+  "preset": "july-2026-formal"
+}

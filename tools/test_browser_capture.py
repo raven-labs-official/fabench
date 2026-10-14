@@ -1,0 +1,1 @@
+../vendor/retrieval-infra/tools/test_browser_capture.py

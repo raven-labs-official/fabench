@@ -1,0 +1,1 @@
+../../vendor/retrieval-infra/src/retrieval/search-providers.test.ts

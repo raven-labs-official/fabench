@@ -1,0 +1,19 @@
+node_modules/
+dist/
+.env
+.env.*
+!.env.example
+data/
+results/
+outputs/
+*.db
+*.db-*
+*.sqlite*
+__pycache__/
+*.pyc
+.venv/
+.playwright/
+.DS_Store
+
+# Locally built SQLite extension (tools/build-native.sh)
+native/build/

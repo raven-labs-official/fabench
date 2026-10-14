@@ -1,0 +1,44 @@
+{
+  "name": "fabench",
+  "version": "0.1.0",
+  "private": true,
+  "license": "Apache-2.0",
+  "type": "module",
+  "engines": {
+    "node": ">=22.13 <23"
+  },
+  "scripts": {
+    "wiki:expand": "tsx vendor/retrieval-infra/tools/expand-wikipedia.ts",
+    "test": "node --test --import tsx 'src/**/*.test.ts'",
+    "typecheck": "python3 tools/verify-retrieval-infra.py && tsc --noEmit",
+    "lint": "bash tools/lint.sh",
+    "corpus:ingest": "tsx src/corpus/ingest-ccnews.ts",
+    "corpus:isolation": "tsx src/corpus/isolation-test.ts",
+    "corpus:verify-denylist": "tsx src/corpus/verify-denylist.ts",
+    "exp:forecast-value": "tsx src/experiments/forecast-value.ts",
+    "exp:leaderboard": "tsx src/analysis/leaderboard.ts",
+    "example:analysis": "tsx src/analysis/leaderboard.ts examples/analysis/forecast-value-example-a.json examples/analysis/forecast-value-example-b.json --output-dir results/example-analysis",
+    "exp:brier-analysis": "tsx src/analysis/brier-results.ts",
+    "exp:params": "tsx src/experiments/params/cli.ts",
+    "exp:status": "tsx src/experiments/registry-cli.ts status",
+    "exp:progress-report": "tsx src/experiments/progress-report.ts",
+    "exp:registry-import": "tsx src/experiments/registry-cli.ts import",
+    "exp:registry-promote-none": "tsx src/experiments/registry-cli.ts promote-none",
+    "exp:registry-promote-equivalent": "tsx src/experiments/registry-cli.ts promote-equivalent",
+    "trace:verify": "tsx src/tracing/verify-trace.ts",
+    "trace:review": "tsx src/tracing/manual-review-cli.ts",
+    "corpus:add": "tsx src/corpus/add-source.ts",
+    "corpus:probe": "tsx src/corpus/probe-coverage.ts",
+    "search": "node vendor/retrieval-infra/bin/fabench-retrieval.mjs search",
+    "retrieve": "node vendor/retrieval-infra/bin/fabench-retrieval.mjs",
+    "search:legacy": "tsx tools/search-cli.ts",
+    "infra:verify": "python3 tools/verify-retrieval-infra.py",
+    "trace:exposure": "tsx src/tracing/audit-exposure.ts"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "2.5.15",
+    "@types/node": "^26.2.0",
+    "tsx": "^4.23.12",
+    "typescript": "^5.9.3"
+  }
+}

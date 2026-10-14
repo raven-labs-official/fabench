@@ -1,0 +1,32 @@
+[
+  {
+    "file": "gf5wbt9v5.html.gz",
+    "url": "https://www.metoffice.gov.uk/research/climate/maps-and-data/location-specific-long-term-averages/gf5wbt9v5",
+    "raw_sha256": "eda28ba86f5db4d173e9e0b35def74df35d89bfde6104b2460f434c06ee4fa05",
+    "title": "Skye: Prabost Location-specific long-term averages",
+    "body_sha256": "1d1c09ab8843e4e1145feda76d49c54d01ee490d302f1952c914e213862a46f1",
+    "body_chars": 73109,
+    "table_blocks": 48,
+    "captured_at_utc": "2026-09-15T22:04:08Z",
+    "scope": "Actual current HTML from failed capacity run, not certified historical evidence. Regression checks preserve pre-fix extraction output.",
+    "source": "Met Office, https://www.metoffice.gov.uk/",
+    "licence": "Open Government Licence v3.0",
+    "licence_url": "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/",
+    "attribution": "Contains public sector information licensed under the Open Government Licence v3.0."
+  },
+  {
+    "file": "gcqdkjm6k.html.gz",
+    "url": "https://www.metoffice.gov.uk/research/climate/maps-and-data/location-specific-long-term-averages/gcqdkjm6k",
+    "raw_sha256": "4b0eee085ccaf0bf5973ca38e2a262be757804234d28fec97b4b9762f355c2b8",
+    "title": "Winterbourne, University Of Birmingham Location-specific long-term averages",
+    "body_sha256": "194b3a3562576c426ba19763068741c76b2249d00a57f896ae3410b67d8272ed",
+    "body_chars": 97065,
+    "table_blocks": 56,
+    "captured_at_utc": "2026-09-15T22:04:08Z",
+    "scope": "Actual current HTML from failed capacity run, not certified historical evidence. Regression checks preserve pre-fix extraction output.",
+    "source": "Met Office, https://www.metoffice.gov.uk/",
+    "licence": "Open Government Licence v3.0",
+    "licence_url": "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/",
+    "attribution": "Contains public sector information licensed under the Open Government Licence v3.0."
+  }
+]

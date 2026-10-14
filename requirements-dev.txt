@@ -1,0 +1,5 @@
+# Development-only Python packages: ruff for `pnpm lint`, pyarrow for the dataset tools and their
+# tests. Install into the project venv with `python -m pip install -r requirements-dev.txt`
+# (or `uv pip install -r requirements-dev.txt`).
+ruff==0.16.10
+pyarrow==25.0.1

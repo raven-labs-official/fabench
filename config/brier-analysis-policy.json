@@ -1,0 +1,12 @@
+{
+  "schema_version": "raven.brier-analysis-policy.v1",
+  "minimum_expected_questions": 80,
+  "primary_coverage_threshold": 0.95,
+  "invalid_conditions": {
+    "raven-condition:90d116da04230c8d": "The old GLM-5.2 Web-filter pipeline had fetched=0 / served=0: no web pages reached the forecasting model, so it cannot be read as a Web-filter effect."
+  },
+  "diagnostic_conditions": {
+    "raven-condition:c3a9b6c5c25a22ae": "GLM-5.2 was requested, but this batch did not save the model identifier the provider actually returned; diagnostic only.",
+    "raven-condition:14913479b37f0707": "GLM-5.2 was requested, but this batch did not save the model identifier the provider actually returned; diagnostic only."
+  }
+}

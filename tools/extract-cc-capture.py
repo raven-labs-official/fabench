@@ -1,0 +1,1 @@
+../vendor/retrieval-infra/tools/extract-cc-capture.py

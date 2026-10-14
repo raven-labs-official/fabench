@@ -1,0 +1,1 @@
+../vendor/retrieval-infra/tools/search-cli.ts

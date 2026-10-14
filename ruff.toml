@@ -1,0 +1,16 @@
+# Error-focused Python lint: syntax/IO errors (E9) and Pyflakes (F) only.
+# No formatter and no style rules; `pnpm lint` runs `ruff check` with this file.
+target-version = "py312"
+# extend-exclude keeps Ruff's defaults (.git, .venv, node_modules, ...) and adds these.
+extend-exclude = [
+  "vendor",
+  "node_modules",
+  "results",
+  "docs/archive",
+  # Paper analysis scripts are kept exactly as used for the paper.
+  "docs/research",
+  "paper",
+]
+
+[lint]
+select = ["E9", "F"]

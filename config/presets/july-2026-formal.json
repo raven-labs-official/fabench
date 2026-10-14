@@ -1,0 +1,55 @@
+{
+  "schema": "raven.run-preset.v1",
+  "name": "july-2026-formal",
+  "description": "July 2026 formal setting (the Sept-17 main experiment, 254 questions, information date 2026-07-01): the protocol values the continuation controller checked, the July index and Wiki manifest, the shared caches and the concurrency used then. Paths start with ${FABENCH_DATA_ROOT} (the data root, see docs/configuration.md). Protocol values are fixed; concurrency and paths can be overridden with --config, but concurrency enters the condition, so changing it prevents reuse of existing cells.",
+  "admission_profile": "custom",
+  "allowed_arms": ["none", "frozen", "web-filter", "both"],
+  "locked": [
+    "n", "include_china_filtered", "ledger", "max_tool_calls", "max_results_per_search", "fetch_chars",
+    "retrieval_profile", "tool_delivery", "frozen_search_delivery", "content_processing", "search_delivery",
+    "search_provider", "leak_llm", "leak_filter", "review_thinking", "review_effort", "reader", "browser_fallback"
+  ],
+  "forbidden": ["evidence_file", "frozen_archive_file"],
+  "design": {
+    "questions_file": "${FABENCH_DATA_ROOT}/runs/raven-bench/question-sets/july-2026-finance-balanced-draft3-20260917/raven-july-2026-model-test.jsonl",
+    "grading_file": "${FABENCH_DATA_ROOT}/runs/raven-bench/question-sets/july-2026-finance-balanced-draft3-20260917/raven-july-2026-grading-key.jsonl",
+    "n": 254,
+    "include_china_filtered": true,
+    "ledger": false,
+    "max_tool_calls": 100,
+    "max_results_per_search": 20,
+    "fetch_chars": 0,
+    "retrieval_profile": "quality-v1",
+    "tool_delivery": "paged",
+    "frozen_search_delivery": "lead",
+    "content_processing": "single-pass",
+    "search_delivery": "summary",
+    "search_provider": "serper",
+    "leak_llm": "deepseek:deepseek-flash",
+    "leak_filter": true,
+    "review_thinking": "enabled",
+    "review_effort": "low",
+    "reader": true,
+    "browser_fallback": false,
+    "frozen_corpus_file": "${FABENCH_DATA_ROOT}/index/frozen/ccnews-before-20260701-v1.db",
+    "wiki_manifest": "${FABENCH_DATA_ROOT}/index/wiki/manifests/wiki-2026-07-01T00-00-00.000Z.json"
+  },
+  "efficiency": {
+    "frozen_workers": 4,
+    "frozen_queue": 1280,
+    "shared_frozen_cache": "${FABENCH_DATA_ROOT}/cache/frozen-query/cache.sqlite",
+    "candidate_concurrency": 8,
+    "review_concurrency": 128,
+    "search_concurrency": 32,
+    "fetch_concurrency": 96,
+    "page_dispatch_concurrency": 128,
+    "shared_review_cache": "${FABENCH_DATA_ROOT}/runs/raven-bench/review-cache-shared"
+  },
+  "services": {
+    "reader_concurrency": 64,
+    "reader_rpm": 480
+  },
+  "paths": {
+    "wiki_cache": "${FABENCH_DATA_ROOT}/index/wiki/wiki-cache.sqlite"
+  }
+}

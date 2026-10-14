@@ -1,0 +1,1 @@
+../vendor/retrieval-infra/tools/test_retrieval_fidelity.py

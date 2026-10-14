@@ -1,0 +1,1 @@
+../vendor/retrieval-infra/tools/build-frozen-index.ts

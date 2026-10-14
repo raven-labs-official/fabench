@@ -1,0 +1,6 @@
+{
+  "schema": "raven.run-preset.v1",
+  "name": "custom",
+  "description": "Fixes no value and starts from the built-in defaults (formerly --profile custom). The shared launcher requires explicit question and answer files.",
+  "admission_profile": "custom"
+}

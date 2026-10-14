@@ -1,0 +1,1 @@
+../vendor/retrieval-infra/tools/test_article_content.py

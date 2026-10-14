@@ -1,0 +1,1 @@
+../../vendor/retrieval-infra/src/corpus/compaction.test.ts

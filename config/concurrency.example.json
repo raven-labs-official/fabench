@@ -1,0 +1,11 @@
+{
+  "schema": "raven.concurrency.v1",
+  "question_concurrency": 2,
+  "model_concurrency": 4,
+  "frozen_workers": 2,
+  "review_concurrency": 4,
+  "search_concurrency": 4,
+  "fetch_concurrency": 8,
+  "reader_concurrency": 4,
+  "reader_rpm": 60
+}

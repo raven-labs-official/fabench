@@ -1,0 +1,42 @@
+{
+  "name": "@fabench/retrieval-infra",
+  "version": "0.1.0",
+  "private": true,
+  "license": "Apache-2.0",
+  "type": "module",
+  "description": "Historical retrieval, temporal leakage filtering, and replay fidelity for forecasting research",
+  "engines": {
+    "node": ">=22.13 <23"
+  },
+  "packageManager": "pnpm@11.22.0",
+  "exports": {
+    ".": "./src/index.ts",
+    "./*": "./src/*"
+  },
+  "bin": {
+    "fabench-retrieval": "./bin/fabench-retrieval.mjs"
+  },
+  "scripts": {
+    "test": "node --test --import tsx src/**/*.test.ts",
+    "test:python": "python3 -m unittest discover -s tools -p 'test_*.py'",
+    "typecheck": "tsc --noEmit",
+    "search": "node bin/fabench-retrieval.mjs search",
+    "retrieve": "node bin/fabench-retrieval.mjs",
+    "index:build": "tsx tools/build-frozen-index.ts",
+    "capture": "tsx tools/capture-search-baseline.ts",
+    "replay": "tsx tools/replay-search-snapshot.ts",
+    "wikipedia:history": "tsx src/corpus/wikipedia-history.ts",
+    "corpus:historical": "tsx src/corpus/collect-historical.ts",
+    "search:web": "tsx src/retrieval/search-provider-cli.ts",
+    "search:legacy": "tsx tools/search-cli.ts",
+    "wiki:cache": "tsx tools/cache-wikipedia.ts",
+    "wiki:expand": "tsx tools/expand-wikipedia.ts"
+  },
+  "dependencies": {
+    "tsx": "4.23.12"
+  },
+  "devDependencies": {
+    "@types/node": "26.2.0",
+    "typescript": "5.9.3"
+  }
+}

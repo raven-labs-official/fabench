@@ -1,0 +1,78 @@
+{
+  "schema": "raven.run-preset.v1",
+  "name": "july-2026-paper",
+  "description": "All 287 questions of the paper (the 254 of july-2026-formal plus the 33 Polymarket questions), information date 2026-07-01, with exactly the protocol values, index, Wiki manifest, caches and concurrency of july-2026-formal. Write its question files with tools/from-dataset.py questions (no --subset). Paths start with ${FABENCH_DATA_ROOT} (the data root, see docs/configuration.md). Protocol values are fixed; concurrency and paths can be overridden with --config, but concurrency enters the condition, so changing it prevents reuse of existing cells.",
+  "admission_profile": "custom",
+  "allowed_arms": [
+    "none",
+    "frozen",
+    "web-filter",
+    "both"
+  ],
+  "locked": [
+    "n",
+    "include_china_filtered",
+    "ledger",
+    "max_tool_calls",
+    "max_results_per_search",
+    "fetch_chars",
+    "retrieval_profile",
+    "tool_delivery",
+    "frozen_search_delivery",
+    "content_processing",
+    "search_delivery",
+    "search_provider",
+    "leak_llm",
+    "leak_filter",
+    "review_thinking",
+    "review_effort",
+    "reader",
+    "browser_fallback"
+  ],
+  "forbidden": [
+    "evidence_file",
+    "frozen_archive_file"
+  ],
+  "design": {
+    "questions_file": "${FABENCH_DATA_ROOT}/runs/raven-bench/question-sets/july-2026-paper-287/raven-july-all-model-test.jsonl",
+    "grading_file": "${FABENCH_DATA_ROOT}/runs/raven-bench/question-sets/july-2026-paper-287/raven-july-all-grading-key.jsonl",
+    "n": 287,
+    "include_china_filtered": true,
+    "ledger": false,
+    "max_tool_calls": 100,
+    "max_results_per_search": 20,
+    "fetch_chars": 0,
+    "retrieval_profile": "quality-v1",
+    "tool_delivery": "paged",
+    "frozen_search_delivery": "lead",
+    "content_processing": "single-pass",
+    "search_delivery": "summary",
+    "search_provider": "serper",
+    "leak_llm": "deepseek:deepseek-flash",
+    "leak_filter": true,
+    "review_thinking": "enabled",
+    "review_effort": "low",
+    "reader": true,
+    "browser_fallback": false,
+    "frozen_corpus_file": "${FABENCH_DATA_ROOT}/index/frozen/ccnews-before-20260701-v1.db",
+    "wiki_manifest": "${FABENCH_DATA_ROOT}/index/wiki/manifests/wiki-2026-07-01T00-00-00.000Z.json"
+  },
+  "efficiency": {
+    "frozen_workers": 4,
+    "frozen_queue": 1280,
+    "shared_frozen_cache": "${FABENCH_DATA_ROOT}/cache/frozen-query/cache.sqlite",
+    "candidate_concurrency": 8,
+    "review_concurrency": 128,
+    "search_concurrency": 32,
+    "fetch_concurrency": 96,
+    "page_dispatch_concurrency": 128,
+    "shared_review_cache": "${FABENCH_DATA_ROOT}/runs/raven-bench/review-cache-shared"
+  },
+  "services": {
+    "reader_concurrency": 64,
+    "reader_rpm": 480
+  },
+  "paths": {
+    "wiki_cache": "${FABENCH_DATA_ROOT}/index/wiki/wiki-cache.sqlite"
+  }
+}

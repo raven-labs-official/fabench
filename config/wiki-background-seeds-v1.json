@@ -1,0 +1,21 @@
+{
+  "selection": "First background expansion proposed on 2026-09-22: general concepts and mechanisms across the existing task domains. Candidates are independent of prediction scores and settlement outcomes. Empty questionIds indicate domain-level background, not a recovered historical question mapping. Pre-anchor existence and redirects must be verified during preparation.",
+  "seeds": [
+    {"url":"https://en.wikipedia.org/wiki/Capital_expenditure","reason":"Connect business investment to capacity and future financial results.","category":"finance","questionIds":[]},
+    {"url":"https://en.wikipedia.org/wiki/Supply_chain","reason":"Explain production constraints and relationships between suppliers and companies.","category":"finance","questionIds":[]},
+    {"url":"https://en.wikipedia.org/wiki/Semiconductor","reason":"Provide industry and technology background for semiconductor companies.","category":"technology","questionIds":[]},
+    {"url":"https://en.wikipedia.org/wiki/Cloud_computing","reason":"Describe cloud services beyond individual company profiles.","category":"technology","questionIds":[]},
+    {"url":"https://en.wikipedia.org/wiki/Data_center","reason":"Explain computing infrastructure and investment requirements.","category":"technology","questionIds":[]},
+    {"url":"https://en.wikipedia.org/wiki/Artificial_intelligence","reason":"Provide general technology background for AI-related events.","category":"technology","questionIds":[]},
+    {"url":"https://en.wikipedia.org/wiki/Opinion_poll","reason":"Explain polling methods and interpretation.","category":"politics","questionIds":[]},
+    {"url":"https://en.wikipedia.org/wiki/Electoral_system","reason":"Connect election rules, votes and political outcomes.","category":"politics","questionIds":[]},
+    {"url":"https://en.wikipedia.org/wiki/Proportional_representation","reason":"Describe how votes translate into representation under this electoral mechanism.","category":"politics","questionIds":[]},
+    {"url":"https://en.wikipedia.org/wiki/Monetary_policy","reason":"Connect central-bank decisions with economic indicators.","category":"economy","questionIds":[]},
+    {"url":"https://en.wikipedia.org/wiki/Clinical_trial","reason":"Explain clinical evidence stages used in drug development.","category":"health","questionIds":[]},
+    {"url":"https://en.wikipedia.org/wiki/Drug_development","reason":"Describe development stages, milestones and risks.","category":"health","questionIds":[]},
+    {"url":"https://en.wikipedia.org/wiki/Vaccine","reason":"Provide general background for vaccine-related public-health events.","category":"health","questionIds":[]},
+    {"url":"https://en.wikipedia.org/wiki/Tropical_cyclone","reason":"Explain storm systems beyond individual season pages.","category":"weather","questionIds":[]},
+    {"url":"https://en.wikipedia.org/wiki/Tropical_cyclogenesis","reason":"Describe the mechanisms of tropical cyclone formation.","category":"weather","questionIds":[]},
+    {"url":"https://en.wikipedia.org/wiki/Accumulated_cyclone_energy","reason":"Explain the metric for aggregate seasonal cyclone activity.","category":"weather","questionIds":[]}
+  ]
+}

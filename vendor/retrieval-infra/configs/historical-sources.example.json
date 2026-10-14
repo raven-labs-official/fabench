@@ -1,0 +1,8 @@
+{
+  "asOf": "2026-03-01T00:00:00Z",
+  "selection": "Manually seeded connectivity pilot: two Federal Reserve background sources. Not a representative evaluation corpus; do not select seeds using resolved test outcomes.",
+  "sources": [
+    { "source": "wikipedia", "language": "en", "title": "Federal Reserve" },
+    { "source": "wayback", "url": "https://www.federalreserve.gov/", "label": "Federal Reserve" }
+  ]
+}

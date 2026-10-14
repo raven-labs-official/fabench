@@ -1,0 +1,5 @@
+{
+  "schema": "raven.infra-vendored.v1",
+  "commit": "1c39e66701ef745cec46171a164b9ed473005e67",
+  "note": "Retrieval infrastructure copied as a plain directory from this source commit."
+}

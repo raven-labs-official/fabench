@@ -1,0 +1,31 @@
+{
+  "description": "Synthetic arithmetic example; not a benchmark measurement.",
+  "reference": [
+    {"id": "acme-guidance", "weight": 1, "facets": [
+      {"id": "raised", "weight": 1},
+      {"id": "new-range", "weight": 1},
+      {"id": "stated-reason", "weight": 1}
+    ]}
+  ],
+  "sources": {"fragment": "On February 1, Acme raised its FY2026 revenue guidance, measured in USD."},
+  "matches": [
+    {"reference_id": "acme-guidance", "identity_verified": true, "facets": {
+      "raised": {"label": "supported", "evidence": [{"source_id": "fragment", "quote": "Acme raised its FY2026 revenue guidance"}]},
+      "new-range": {"label": "missing"},
+      "stated-reason": {"label": "missing"}
+    }}
+  ],
+  "exposures": [
+    {"id": "v1-e1", "event_id": "event1", "label": "leak", "multiplicity": 7},
+    {"id": "v2-e1", "event_id": "event1", "label": "unknown", "multiplicity": 13},
+    {"id": "v3-e2", "event_id": "event2", "label": "safe", "multiplicity": 80}
+  ],
+  "population": [
+    {"id": "v1", "model_score": 0.95, "exposure_weight": 3},
+    {"id": "v2", "model_score": 0.2, "exposure_weight": 1}
+  ],
+  "audited": [
+    {"id": "v1", "label": 0, "inclusion_probability": 1},
+    {"id": "v2", "label": 1, "inclusion_probability": 1}
+  ]
+}

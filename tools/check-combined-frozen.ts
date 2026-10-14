@@ -1,0 +1,1 @@
+../vendor/retrieval-infra/tools/check-combined-frozen.ts

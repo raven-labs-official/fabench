@@ -1,0 +1,28 @@
+{
+  "$schema": "./node_modules/@biomejs/biome/configuration_schema.json",
+  "files": {
+    "includes": [
+      "src/**",
+      "tools/**/*.ts",
+      "tools/**/*.mjs",
+      "!src/predictors",
+      "!!**/vendor",
+      "!!**/node_modules",
+      "!!**/results",
+      "!!**/dist"
+    ]
+  },
+  "formatter": { "enabled": false },
+  "assist": { "enabled": false },
+  "linter": {
+    "enabled": true,
+    "rules": {
+      "preset": "none",
+      "correctness": {
+        "preset": "recommended",
+        "noUnusedImports": "error",
+        "noUnusedVariables": "error"
+      }
+    }
+  }
+}

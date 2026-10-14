@@ -1,0 +1,41 @@
+export { createRetrievalRuntime, RETRIEVAL_PROFILE, type RetrievalRuntimeOptions } from './api/runtime.js';
+export type { BrowseOptions, BrowsePage, BrowseQuery } from './corpus/browse.js';
+export { createRetrievalSession, exactAnchor, type RetrievalSessionOptions } from './api/session.js';
+export { CorpusStore, contentTerms } from './corpus/store.js';
+export { buildFrozenIndex, capturedDocumentHash } from './corpus/frozen-index.js';
+export { BodyCodec, decodeBody, installBodyView, trainBodyDictionary } from './corpus/body-codec.js';
+export { compactCorpus, verifyCompaction, rebuildCompactedFts, trainCorpusDictionary } from './corpus/compaction.js';
+export { corpusRetrievalIdentity } from './corpus/retrieval-identity.js';
+export { FROZEN_QUERY_POLICY } from './corpus/query-identity.js';
+export { FrozenBackend, WebSearchBackend, MergeBackend, type SearchBackend, type BackendDoc, type BackendResult } from './retrieval/search-backend.js';
+export { LeakFilter, isWithheld, type LeakReviewContext } from './retrieval/leak-filter.js';
+export { PageDater, pageAcquisitionPolicy, type PageAcquisitionOptions } from './retrieval/page-dater.js';
+export { FrozenWithArchiveBackend, openFrozenArchive } from './retrieval/frozen-with-archive.js';
+export { ArchiveSupplementBackend } from './retrieval/archive-supplement.js';
+export { RecordedSearchBackend, frozenSnapshotBackend, validateSnapshot, type SearchSnapshot } from './retrieval/search-snapshot.js';
+export { createSearchProvider, BRAVE_SEARCH_CONFIG, assertSearchProviderReady, configureSearchHttpConcurrency } from './retrieval/search-providers.js';
+export { createLlmClient } from './llm/providers.js';
+export type { LlmClient } from './llm/client.js';
+export { CONCEPT_QUERY_POLICY, planQuery, type QueryAliases } from './corpus/query-plan.js';
+export { EvidenceReviewer, EVIDENCE_REVIEW_POLICY, EVIDENCE_REVIEW_DEFAULT_CONCURRENCY, type EvidenceReviewOptions } from './retrieval/evidence-reviewer.js';
+export { PairedReviewer, PAIRED_REVIEW_POLICY, type ReviewService } from './retrieval/paired-reviewer.js';
+export { EvidenceStore } from './retrieval/evidence-store.js';
+export { DocumentReader, DOCUMENT_POLICY } from './retrieval/document-reader.js';
+export { QualityWebBackend, QualityFrozenBackend, QUALITY_WEB_EXECUTION_POLICY, webExecutionPolicy, type WebExecutionOptions } from './retrieval/quality-backend.js';
+export { ReaderCleaner, READER_CLEANING_POLICY, splitReaderBlocks, parseReaderLabels,
+  READER_CLEANING_DEFAULT_CONCURRENCY, type ReaderBlock, type ReaderDecision, type ReaderCleaningInput, type ReaderCleaningResult, type ReaderCleanerOptions } from './retrieval/reader-cleaner.js';
+export { readWikipediaHistory } from './corpus/wikipedia-history.js';
+export { collectWikipedia, collectWayback } from './corpus/historical-adapters.js';
+export { HistoricalBackend } from './retrieval/historical-backend.js';
+export { TantivyBackend } from './retrieval/tantivy-backend.js';
+
+export { WikipediaCache, WikiSnapshot, buildWikiIndex, WIKIPEDIA_CACHE_POLICY, WIKIPEDIA_RESOLUTION_POLICY, resolveWikiDocument } from './corpus/wikipedia-cache.js';
+export type { WikiManifest, WikiRevision } from './corpus/wikipedia-cache.js';
+export { QueryExpander, QUERY_EXPANSION_POLICY } from './retrieval/query-expander.js';
+
+export { FrozenWorkerPool, type FrozenPoolOptions } from './corpus/frozen-worker-pool.js';
+export { RetrievalInputError, isRetrievalInputError } from './retrieval/input-error.js';
+export { withTiming, timed, timingSpan, summarizeTiming, type TimingEvent } from './observability/timeline.js';
+export { SourceManifest, type RegisteredSource } from './retrieval/source-manifest.js';
+export { FallbackLlmClient, FALLBACK_CLIENT_POLICY, type FallbackClientOptions } from "./llm/fallback-client.js";
+export { REASONING_REPLAY_POLICY, reasoningReplayField } from "./llm/openai-compatible.js";

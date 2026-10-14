@@ -1,0 +1,1 @@
+../vendor/retrieval-infra/tools/test_corpus_body.py

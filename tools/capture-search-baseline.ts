@@ -1,0 +1,1 @@
+../vendor/retrieval-infra/tools/capture-search-baseline.ts

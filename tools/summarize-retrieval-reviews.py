@@ -1,0 +1,1 @@
+../vendor/retrieval-infra/tools/summarize-retrieval-reviews.py

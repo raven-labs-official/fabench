@@ -1,0 +1,11 @@
+{
+  "synthetic": true,
+  "description": "Four invented probabilities and outcomes for exercising the analysis CLI.",
+  "config": { "llm": "synthetic:example-a", "maxToolCalls": 0 },
+  "perQuestion": [
+    { "question_id": "example-1", "outcome": 1, "forecasts": { "none": 0.8 } },
+    { "question_id": "example-2", "outcome": 0, "forecasts": { "none": 0.2 } },
+    { "question_id": "example-3", "outcome": 1, "forecasts": { "none": 0.7 } },
+    { "question_id": "example-4", "outcome": 0, "forecasts": { "none": 0.4 } }
+  ]
+}

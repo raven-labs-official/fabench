@@ -1,0 +1,5 @@
+{
+  "dataRoot": "../data",
+  "resultsDir": "../results",
+  "registryPath": "../results/experiment-registry.sqlite"
+}

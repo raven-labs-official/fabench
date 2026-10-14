@@ -1,0 +1,4 @@
+{"id": "SYN-01", "resolution_date": "2026-08-20", "resolution_result": 1, "numeric_result": null}
+{"id": "SYN-02", "resolution_date": "2026-08-14", "resolution_result": 1, "numeric_result": {"value": 2.3, "unit": "percent"}}
+{"id": "SYN-03", "resolution_date": "2026-09-30", "resolution_result": 0, "numeric_result": null}
+{"id": "SYN-04", "resolution_date": "2026-08-14", "resolution_result": 0, "numeric_result": {"value": 47.5, "unit": "USD"}}

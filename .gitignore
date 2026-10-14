@@ -1,0 +1,26 @@
+node_modules/
+.venv/
+.playwright/
+dist/
+__pycache__/
+
+# Run outputs and local data (indexes, downloaded dataset files).
+results/
+/data/
+
+# Credentials and local settings. The example files are templates and stay tracked.
+.env
+.env.*
+!.env.example
+/config/paths.local.json
+/config/site.json
+
+# Paper script outputs when no output directory is configured (docs/configuration.md).
+/paper/numbers-287.*
+/paper/tables-287.tex
+/paper/figures/*.pdf
+/paper/figures/*.png
+
+# Compressed pages under the test fixtures are source files, even where a global
+# ignore file excludes *.gz.
+!vendor/retrieval-infra/tools/fixtures/**/*.html.gz

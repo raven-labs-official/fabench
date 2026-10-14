@@ -1,0 +1,1 @@
+../vendor/retrieval-infra/tools/test_stdout_writer.py

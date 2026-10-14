@@ -1,0 +1,1 @@
+../vendor/retrieval-infra/tools/wiki-presentation-manifest.ts

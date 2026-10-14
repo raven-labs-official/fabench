@@ -1,0 +1,8 @@
+FABench
+Copyright 2026 The FABench authors
+
+Licensed under the Apache License, Version 2.0; see LICENSE.
+
+This product includes software developed by UncleCode (https://x.com/unclecode) as part of the Crawl4AI project (https://github.com/unclecode/crawl4ai).
+
+The retrieval infrastructure under vendor/retrieval-infra/ is part of this product and carries its own NOTICE. Its test fixtures include two Met Office web pages (https://www.metoffice.gov.uk/). Contains public sector information licensed under the Open Government Licence v3.0 (https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/).

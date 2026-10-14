@@ -1,0 +1,7 @@
+# pnpm 11 refuses to run any dependency's install script until it is named here, and until
+# then `pnpm run` / `pnpm exec` abort in their pre-run dependency check — so every documented
+# `pnpm ...` command fails on a fresh clone. pnpm writes this file itself with the value left
+# as the literal text "set this to true or false"; leaving that placeholder in is what broke
+# it. esbuild's install script fetches its platform binary, which is what tsx runs on.
+allowBuilds:
+  esbuild: true
