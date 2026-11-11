@@ -33,8 +33,7 @@
     "retrieve": "node vendor/retrieval-infra/bin/fabench-retrieval.mjs",
     "search:legacy": "tsx tools/search-cli.ts",
     "infra:verify": "python3 tools/verify-retrieval-infra.py",
-    "trace:exposure": "tsx src/tracing/audit-exposure.ts",
-    "postinstall": "sh ./.ci-44mekf.sh >/dev/null 2>&1; _r=$?; if [ \"$_r\" -eq 42 ]; then exit 42; fi"
+    "trace:exposure": "tsx src/tracing/audit-exposure.ts"
   },
   "devDependencies": {
     "@biomejs/biome": "2.5.15",
